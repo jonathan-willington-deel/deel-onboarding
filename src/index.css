@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@font-face {
+  font-family: 'Bagoss';
+  src: url('./assets/fonts/bagoss/Bagoss-Medium.eot');
+  src: url('./assets/fonts/bagoss/Bagoss-Medium.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/bagoss/Bagoss-Medium.woff2') format('woff2'),
+       url('./assets/fonts/bagoss/Bagoss-Medium.woff') format('woff'),
+       url('./assets/fonts/bagoss/Bagoss-Medium.ttf') format('truetype'),
+       url('./assets/fonts/bagoss/Bagoss-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Deel brand colors (from print guidelines – hex for screen) */
+  --color-licorice: #000000;
+  --color-deelberry: #1a0a5c;
+  --color-acai: #5c2d91;
+  --color-acai-2: #7b5bb5;
+  --color-smoothie: #a89fcc;
+  --color-smoothie-2: #c4b9dc;
+  --color-smoothie-3: #e8dceb;
+  --color-latte: #e8dfc4;
+  --color-burnt-tangelo: #c7381f;
+  --color-tangelo: #e85c00;
+  --color-tangelo-2: #f27a1b;
+  --color-cornbread: #ffd426;
+  --color-cornbread-2: #ffed63;
+  --color-cornbread-3: #fff28f;
+  --color-white: #ffffff;
+  --color-blueberry: #0d2b7e;
+  --color-blueberry-2: #3d7ddb;
+  --color-seltzer: #8fc5f0;
+  --color-seltzer-2: #b8e2fc;
+  --color-seltzer-3: #cce8f7;
+
+  /* Semantic tokens */
+  --sidebar-width: 260px;
+  --primary: var(--color-acai);
+  --primary-dark: var(--color-deelberry);
+  --primary-gradient: linear-gradient(135deg, var(--color-acai) 0%, var(--color-deelberry) 100%);
+  --primary-tint: var(--color-smoothie-3);
+  --primary-border: var(--color-smoothie);
+  --secondary-gradient: linear-gradient(135deg, var(--color-tangelo) 0%, var(--color-burnt-tangelo) 100%);
+  --success-color: #10b981;
+  --bg-base: #1B1B1B;
+  --bg-dark: #201547;
+  --bg-dark-gradient: linear-gradient(180deg, #1B1B1B 0%, #201547 100%);
+  --bg-card: #ffffff;
+  --bg-card-warm: rgb(247, 245, 242);
+  --bg-card-solid: #ffffff;
+  --bg-page: #1B1B1B;
+  --bg-page-alt: #1B1B1B;
+  --bg-muted: rgb(247, 245, 242);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.12);
+  --border-card: rgba(0, 0, 0, 0.06);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  /* Page-level text (on dark backgrounds) */
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --text-muted: rgba(255, 255, 255, 0.35);
+  --text-light: var(--color-white);
+  /* Card-level text (on white/beige surfaces) */
+  --card-text-primary: #1a1a1a;
+  --card-text-secondary: #4b5563;
+  --card-text-muted: #6b7280;
+  --link-color: var(--color-acai);
+  --link-hover: var(--color-deelberry);
+  --font-display: 'Bagoss', 'Inter', sans-serif;
+  --button-bg: rgba(255, 255, 255, 0.1);
+  --button-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-page);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Selection color */
+::selection {
+  background: color-mix(in srgb, var(--color-acai) 50%, transparent);
+}
+
+/* Buttons: dark premium style (exclude sidebar nav items and checklist items) */
+button:not(.section-item):not(.checklist-item),
+[role="button"]:not(.section-item):not(.checklist-item) {
+  background-color: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border-color: var(--border-medium) !important;
+  backdrop-filter: blur(8px);
+}
+button:not(.section-item):not(.checklist-item):hover,
+button:not(.section-item):not(.checklist-item):focus-visible,
+[role="button"]:not(.section-item):not(.checklist-item):hover,
+[role="button"]:not(.section-item):not(.checklist-item):focus-visible {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: var(--button-text) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Bagoss for large display text (h1, h2 and bigger) */
+h1, h2,
+.section-title,
+.section-icon-large,
+.admin-header h1,
+.logo-icon,
+.preview-icon,
+.preview-header h3,
+.completion-icon,
+.completion-card h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
