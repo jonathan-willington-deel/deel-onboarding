@@ -154,15 +154,16 @@ export const sections: Section[] = [
     ],
   },
   {
-    id: 'environments',
-    title: 'Understanding Environments',
+    id: 'learn-deel',
+    title: 'Learn Deel',
     icon: '',
-    description: 'Watch the overview video and understand our different apps and environments.',
+    description: 'Understand Deel\'s environments and deepen your product knowledge.',
     subsections: [
       {
-        title: 'Watch & Learn',
+        title: 'Watch',
         items: [
           { id: 'env-1', text: 'Watch the environments overview video', link: 'https://drive.google.com/file/d/1Ka905v28hitbZwElwKsITMeS6BFlObQI/view', linkText: 'Watch video' },
+          { id: 'learn-1', text: 'Testing at Deel as a Product Designer', link: 'https://drive.google.com/file/d/1yNOdjR4ni-XiRAc6rVzGRgIN6ICeR0y-/view', linkText: 'Watch video' },
         ],
       },
       {
@@ -176,6 +177,28 @@ export const sections: Section[] = [
           { id: 'env-6', text: '**Dev** - Where new functionality is pushed (anonymised DB refreshed every 12 weeks)', link: 'https://dev.deel.wtf/', linkText: 'dev.deel.wtf' },
           { id: 'env-7', text: '**Giger** - Local branches for QA before pushing to dev (e.g., des-3332.deel.wtf)' },
           { id: 'env-8', text: '**Demo** - Mainly for sales demos to prospective clients', link: 'https://demo.letsdeel.com/', linkText: 'demo.letsdeel.com' },
+        ],
+      },
+      {
+        title: 'Product knowledge',
+        items: [
+          { id: 'learn-2', text: 'Explore Deel Blog', link: 'https://www.deel.com/blog', linkText: 'Deel Blog' },
+          { id: 'learn-3', text: 'Follow Deel LinkedIn', link: 'https://www.linkedin.com/company/deel/posts/?feedView=all', linkText: 'LinkedIn' },
+          { id: 'learn-4', text: 'Review Deel Global Hiring Guide', link: 'https://www.deel.com/global-hiring-guide', linkText: 'Hiring Guide' },
+          { id: 'learn-5', text: 'Explore Deel Community', link: 'https://community.deel.com/', linkText: 'Community' },
+          { id: 'learn-6', text: 'Watch Deel Worker types video', link: 'https://www.loom.com/share/429357a1b2fe4b4280776cb831db442e?sid=ca226d1d-e6be-4cae-92f7-73a3e4fd274d', linkText: 'Worker types' },
+          { id: 'learn-7', text: 'Review Deel Help Center', link: 'https://help.letsdeel.com/hc/en-gb', linkText: 'Help Center' },
+          { id: 'learn-8', text: 'Review Global payroll knowledge hub', link: 'https://wiki.deel.network/i/40904', linkText: 'Payroll hub' },
+        ],
+      },
+      {
+        title: 'Processes',
+        items: [
+          { id: 'learn-9', text: 'Learn Go to Market (GTM) Process', link: 'https://wiki.deel.network/i/4110', linkText: 'GTM Process' },
+          { id: 'learn-10', text: 'Understand how documentation should work', link: 'https://www.figma.com/file/17arHKV6dMgCVEociNhfSo/Design-Org.-%2FTeam-News-%26-Updates?type=design&node-id=1%3A2&mode=design', linkText: 'Documentation' },
+          { id: 'learn-11', text: 'Test our internal AI Alicia', link: 'https://admin.deel.network/alicia', linkText: 'Deel IQ Alicia' },
+          { id: 'learn-12', text: 'Read our Sales collateral', link: 'https://wiki.deel.network/i/8179', linkText: 'Sales collateral' },
+          { id: 'learn-13', text: 'Review our career ladder for Product Design', link: 'https://docs.google.com/spreadsheets/d/1ffvSvXTWb38-BFeDm3Ui1sbb1yxBd2EJeGsuk1STpfY/edit?gid=890316881#gid=890316881', linkText: 'Career ladder' },
         ],
       },
     ],
@@ -229,9 +252,9 @@ export const sections: Section[] = [
   },
   {
     id: 'design-team',
-    title: 'Design Team',
+    title: 'Team',
     icon: '',
-    description: 'Connect with the design leadership team at Deel. We recommend setting up short intro calls within your first week.',
+    description: 'Meet your team and connect with the design leadership at Deel. We recommend setting up short intro calls within your first week.',
     subsections: [
       {
         title: 'CDO',
@@ -299,41 +322,6 @@ export const sections: Section[] = [
           { id: 'pto-3', text: 'Ensure you have access to \'Time Off\' by Deel' },
           { id: 'pto-4', text: 'Add in any planned holiday that you have coming up over the next 6 months' },
           { id: 'pto-5', text: 'Add in any national holidays for your country of work' },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'learning',
-    title: 'Learning: Watch & Read',
-    icon: '',
-    subsections: [
-      {
-        title: 'Watch',
-        items: [
-          { id: 'learn-1', text: 'Testing at Deel as a Product Designer', link: 'https://drive.google.com/file/d/1yNOdjR4ni-XiRAc6rVzGRgIN6ICeR0y-/view', linkText: 'Watch video' },
-        ],
-      },
-      {
-        title: 'Product knowledge',
-        items: [
-          { id: 'learn-2', text: 'Explore Deel Blog', link: 'https://www.deel.com/blog', linkText: 'Deel Blog' },
-          { id: 'learn-3', text: 'Follow Deel LinkedIn', link: 'https://www.linkedin.com/company/deel/posts/?feedView=all', linkText: 'LinkedIn' },
-          { id: 'learn-4', text: 'Review Deel Global Hiring Guide', link: 'https://www.deel.com/global-hiring-guide', linkText: 'Hiring Guide' },
-          { id: 'learn-5', text: 'Explore Deel Community', link: 'https://community.deel.com/', linkText: 'Community' },
-          { id: 'learn-6', text: 'Watch Deel Worker types video', link: 'https://www.loom.com/share/429357a1b2fe4b4280776cb831db442e?sid=ca226d1d-e6be-4cae-92f7-73a3e4fd274d', linkText: 'Worker types' },
-          { id: 'learn-7', text: 'Review Deel Help Center', link: 'https://help.letsdeel.com/hc/en-gb', linkText: 'Help Center' },
-          { id: 'learn-8', text: 'Review Global payroll knowledge hub', link: 'https://wiki.deel.network/i/40904', linkText: 'Payroll hub' },
-        ],
-      },
-      {
-        title: 'Processes',
-        items: [
-          { id: 'learn-9', text: 'Learn Go to Market (GTM) Process', link: 'https://wiki.deel.network/i/4110', linkText: 'GTM Process' },
-          { id: 'learn-10', text: 'Understand how documentation should work', link: 'https://www.figma.com/file/17arHKV6dMgCVEociNhfSo/Design-Org.-%2FTeam-News-%26-Updates?type=design&node-id=1%3A2&mode=design', linkText: 'Documentation' },
-          { id: 'learn-11', text: 'Test our internal AI Alicia', link: 'https://admin.deel.network/alicia', linkText: 'Deel IQ Alicia' },
-          { id: 'learn-12', text: 'Read our Sales collateral', link: 'https://wiki.deel.network/i/8179', linkText: 'Sales collateral' },
-          { id: 'learn-13', text: 'Review our career ladder for Product Design', link: 'https://docs.google.com/spreadsheets/d/1ffvSvXTWb38-BFeDm3Ui1sbb1yxBd2EJeGsuk1STpfY/edit?gid=890316881#gid=890316881', linkText: 'Career ladder' },
         ],
       },
     ],

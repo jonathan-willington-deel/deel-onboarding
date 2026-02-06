@@ -94,6 +94,7 @@ export function SectionCard({
       <style>{`
         .section-card {
           padding: 40px;
+          padding-left: 64px;
           background: transparent;
         }
 
@@ -292,6 +293,36 @@ export function SectionCard({
         .person-role {
           font-size: 12px;
           color: var(--card-text-secondary);
+        }
+
+        /* ── Inverted (light) theme overrides ── */
+        .section-scroll-target--inverted .section-header {
+          border-bottom-color: rgba(0, 0, 0, 0.10);
+        }
+
+        .section-scroll-target--inverted .section-title {
+          color: #1a1a1a;
+        }
+
+        .section-scroll-target--inverted .section-description {
+          color: #4b5563;
+        }
+
+        .section-scroll-target--inverted .subsection-title {
+          color: #1a1a1a;
+        }
+
+        .section-scroll-target--inverted .info-card {
+          background: rgba(0, 0, 0, 0.04);
+          border-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .section-scroll-target--inverted .info-label {
+          color: #6b7280;
+        }
+
+        .section-scroll-target--inverted .info-value {
+          color: #1a1a1a;
         }
       `}</style>
     </div>

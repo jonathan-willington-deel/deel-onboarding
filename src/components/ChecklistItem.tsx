@@ -189,6 +189,60 @@ export function ChecklistItem({ item, isCompleted, onToggle, readOnly }: Checkli
           letter-spacing: -0.01em;
           border: 1px solid color-mix(in srgb, var(--color-acai) 25%, transparent);
         }
+
+        /* ── Inverted (light) theme overrides ── */
+        .section-scroll-target--inverted .checklist-item {
+          background: #f3f4f6;
+          color: #1a1a1a;
+          border-color: rgba(0, 0, 0, 0.08);
+          backdrop-filter: none;
+        }
+
+        .section-scroll-target--inverted .checklist-item:not(.checklist-item--readonly):hover {
+          background: #e5e7eb;
+          border-color: rgba(0, 0, 0, 0.12);
+        }
+
+        .section-scroll-target--inverted .checklist-item--completed {
+          background: color-mix(in srgb, var(--success-color) 8%, #f3f4f6);
+          border-color: color-mix(in srgb, var(--success-color) 20%, transparent);
+        }
+
+        .section-scroll-target--inverted .checklist-checkbox {
+          border-color: rgba(0, 0, 0, 0.25);
+          color: #ffffff;
+        }
+
+        .section-scroll-target--inverted .checklist-item:hover .checklist-checkbox:not(.checklist-checkbox--checked) {
+          border-color: var(--color-acai);
+        }
+
+        .section-scroll-target--inverted .item-text {
+          color: #1a1a1a;
+        }
+
+        .section-scroll-target--inverted .item-text--completed {
+          color: #6b7280;
+          text-decoration-color: color-mix(in srgb, #6b7280 40%, transparent);
+        }
+
+        .section-scroll-target--inverted .item-link {
+          color: var(--color-acai);
+        }
+
+        .section-scroll-target--inverted .item-link:hover {
+          color: var(--color-deelberry);
+        }
+
+        .section-scroll-target--inverted .item-avatar {
+          border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .section-scroll-target--inverted .channel-tag {
+          background: color-mix(in srgb, var(--color-acai) 12%, transparent);
+          color: var(--color-acai);
+          border-color: color-mix(in srgb, var(--color-acai) 15%, transparent);
+        }
       `}</style>
     </div>
   );

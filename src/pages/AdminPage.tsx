@@ -12,7 +12,7 @@ import {
 import { motion } from 'framer-motion';
 import type { OnboardingData, TeamMember, ProductTeamMember, CustomTask } from '../types';
 import { generateOnboardingUrl } from '../hooks/useOnboardingData';
-import { defaultOnboardingData, designLeads } from '../data/defaultContent';
+import { defaultOnboardingData } from '../data/defaultContent';
 
 export function AdminPage() {
   const [formData, setFormData] = useState<OnboardingData>({
@@ -534,43 +534,20 @@ export function AdminPage() {
           </div>
         </div>
 
-        {/* Design Leads Reference */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="design-leads-section"
-        >
-          <Card>
-            <CardHeader>
-              <h2>Design Leads Reference</h2>
-            </CardHeader>
-            <Divider />
-            <CardBody>
-              <div className="leads-grid">
-                {designLeads.map((lead, index) => (
-                  <div key={index} className="lead-card">
-                    <span className="lead-name">{lead.name}</span>
-                    <span className="lead-team">{lead.team}</span>
-                  </div>
-                ))}
-              </div>
-            </CardBody>
-          </Card>
-        </motion.div>
       </main>
 
       <style>{`
         .admin-page {
           min-height: 100vh;
-          background: var(--bg-page);
+          background: #121212;
+          color: rgba(255, 255, 255, 0.92);
         }
 
         .admin-header {
           background: var(--bg-dark);
           padding: 48px 40px;
-          color: var(--text-primary);
-          border-bottom: 1px solid var(--border-subtle);
+          color: rgba(255, 255, 255, 0.92);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .header-content {
@@ -582,11 +559,12 @@ export function AdminPage() {
           font-size: 36px;
           font-weight: 500;
           margin: 0 0 8px 0;
+          color: rgba(255, 255, 255, 0.95);
         }
 
         .admin-header p {
           font-size: 16px;
-          color: var(--text-secondary);
+          color: rgba(255, 255, 255, 0.55);
           margin: 0;
         }
 
@@ -621,17 +599,68 @@ export function AdminPage() {
         }
 
         .form-card, .preview-card, .info-card {
-          background: var(--bg-card);
-          color: var(--card-text-primary);
+          background: rgba(255, 255, 255, 0.06);
+          color: rgba(255, 255, 255, 0.92);
           border-radius: 16px;
-          box-shadow: 0 4px 20px var(--shadow-color);
-          border: 1px solid var(--border-card);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+          border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
+        /* HeroUI overrides for dark theme */
         .admin-page [data-slot="input-wrapper"] {
-          background-color: var(--bg-card-warm) !important;
-          border: 1px solid rgba(0, 0, 0, 0.08) !important;
-          box-shadow: none;
+          background-color: rgba(255, 255, 255, 0.07) !important;
+          border: 1px solid rgba(255, 255, 255, 0.12) !important;
+          box-shadow: none !important;
+          color: rgba(255, 255, 255, 0.92) !important;
+        }
+
+        .admin-page [data-slot="input-wrapper"]:hover,
+        .admin-page [data-slot="input-wrapper"]:focus-within {
+          border-color: rgba(255, 255, 255, 0.25) !important;
+        }
+
+        .admin-page [data-slot="inner-wrapper"] {
+          color: rgba(255, 255, 255, 0.92) !important;
+        }
+
+        .admin-page input,
+        .admin-page textarea {
+          color: rgba(255, 255, 255, 0.92) !important;
+          caret-color: var(--color-smoothie) !important;
+        }
+
+        .admin-page input::placeholder,
+        .admin-page textarea::placeholder {
+          color: rgba(255, 255, 255, 0.35) !important;
+        }
+
+        .admin-page [data-slot="label"] {
+          color: rgba(255, 255, 255, 0.55) !important;
+        }
+
+        .admin-page [data-slot="description"] {
+          color: rgba(255, 255, 255, 0.4) !important;
+        }
+
+        /* HeroUI Card overrides */
+        .admin-page .heroui-card,
+        .admin-page [data-slot="base"] {
+          background: rgba(255, 255, 255, 0.06) !important;
+          color: rgba(255, 255, 255, 0.92) !important;
+        }
+
+        /* HeroUI Divider */
+        .admin-page hr,
+        .admin-page [role="separator"] {
+          border-color: rgba(255, 255, 255, 0.08) !important;
+          background: rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* HeroUI Snippet */
+        .admin-page .url-snippet {
+          background: rgba(255, 255, 255, 0.05) !important;
+          border-color: rgba(255, 255, 255, 0.1) !important;
+          color: rgba(255, 255, 255, 0.85) !important;
         }
 
         .card-header {
@@ -645,7 +674,7 @@ export function AdminPage() {
           font-size: 18px;
           font-weight: 500;
           margin: 0;
-          color: var(--card-text-primary);
+          color: rgba(255, 255, 255, 0.92);
         }
 
         .card-body {
@@ -664,7 +693,7 @@ export function AdminPage() {
 
         .empty-state {
           text-align: center;
-          color: var(--card-text-secondary);
+          color: rgba(255, 255, 255, 0.45);
           padding: 20px;
         }
 
@@ -697,26 +726,27 @@ export function AdminPage() {
           font-size: 24px;
           font-weight: 500;
           margin: 0;
+          color: rgba(255, 255, 255, 0.95);
         }
 
         .preview-header p {
           font-size: 14px;
-          color: var(--text-secondary);
+          color: rgba(255, 255, 255, 0.5);
           margin: 4px 0 0 0;
         }
 
         .preview-details {
-          background: var(--bg-card-warm);
+          background: rgba(255, 255, 255, 0.05);
           border-radius: 12px;
           padding: 16px;
-          border: 1px solid rgba(0, 0, 0, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .detail-row {
           display: flex;
           justify-content: space-between;
           padding: 8px 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .detail-row:last-child {
@@ -725,13 +755,13 @@ export function AdminPage() {
 
         .detail-label {
           font-size: 13px;
-          color: var(--card-text-secondary);
+          color: rgba(255, 255, 255, 0.5);
         }
 
         .detail-value {
           font-size: 13px;
           font-weight: 500;
-          color: var(--card-text-primary);
+          color: rgba(255, 255, 255, 0.85);
         }
 
         .action-buttons {
@@ -744,16 +774,17 @@ export function AdminPage() {
         }
 
         .generated-url {
-          background: linear-gradient(135deg, color-mix(in srgb, var(--color-acai) 15%, transparent) 0%, color-mix(in srgb, var(--color-deelberry) 15%, transparent) 100%);
+          background: linear-gradient(135deg, rgba(92, 45, 145, 0.2) 0%, rgba(26, 10, 92, 0.2) 100%);
           border-radius: 12px;
           padding: 16px;
-          border: 1px solid var(--border-subtle);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .url-label {
           font-size: 13px;
           font-weight: 500;
           margin: 0 0 12px 0;
+          color: rgba(255, 255, 255, 0.85);
         }
 
         .url-snippet {
@@ -769,6 +800,7 @@ export function AdminPage() {
           font-size: 16px;
           font-weight: 500;
           margin: 0 0 16px 0;
+          color: rgba(255, 255, 255, 0.92);
         }
 
         .info-card ol {
@@ -778,47 +810,17 @@ export function AdminPage() {
 
         .info-card li {
           margin-bottom: 8px;
-          color: var(--card-text-secondary);
+          color: rgba(255, 255, 255, 0.55);
         }
 
         .info-card .note {
           font-size: 12px;
-          color: var(--card-text-secondary);
-          background: var(--bg-card-warm);
+          color: rgba(255, 255, 255, 0.5);
+          background: rgba(255, 255, 255, 0.05);
           padding: 12px;
           border-radius: 8px;
           margin: 0;
-          border: 1px solid rgba(0, 0, 0, 0.06);
-        }
-
-        .design-leads-section {
-          margin-top: 32px;
-        }
-
-        .leads-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gap: 12px;
-        }
-
-        .lead-card {
-          display: flex;
-          flex-direction: column;
-          padding: 16px;
-          background: var(--bg-card-warm);
-          border-radius: 12px;
-          border: 1px solid rgba(0, 0, 0, 0.06);
-          color: var(--card-text-primary);
-        }
-
-        .lead-name {
-          font-weight: 500;
-          margin-bottom: 4px;
-        }
-
-        .lead-team {
-          font-size: 13px;
-          color: var(--card-text-secondary);
+          border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         @media (max-width: 1024px) {
