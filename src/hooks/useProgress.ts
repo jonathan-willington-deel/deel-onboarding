@@ -57,6 +57,14 @@ export function useProgress(encodedData: string) {
     });
   }, []);
 
+  const completeAll = useCallback((allItemIds: string[]) => {
+    setProgress((prev) => ({
+      ...prev,
+      completedItems: [...new Set([...prev.completedItems, ...allItemIds])],
+      lastUpdated: Date.now(),
+    }));
+  }, []);
+
   const isItemCompleted = useCallback((itemId: string) => {
     return progress.completedItems.includes(itemId);
   }, [progress.completedItems]);
@@ -86,6 +94,7 @@ export function useProgress(encodedData: string) {
   return {
     progress,
     toggleItem,
+    completeAll,
     isItemCompleted,
     setLastVisited,
     getCompletedCount,

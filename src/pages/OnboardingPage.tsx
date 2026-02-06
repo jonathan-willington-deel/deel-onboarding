@@ -57,6 +57,7 @@ export function OnboardingPage() {
   const {
     progress,
     toggleItem,
+    completeAll,
     isItemCompleted,
     setLastVisited,
     getSectionProgress,
@@ -124,6 +125,19 @@ export function OnboardingPage() {
         return s;
       });
   }, [onboardingData.customTasks, onboardingData.teamDesigners, onboardingData.productTeam]);
+
+  // Gather all checkable item IDs for the completion simulator
+  const allCheckableItemIds = useMemo(() => {
+    return filteredSections.flatMap((section) =>
+      section.subsections
+        .filter((sub) => !sub.readOnly)
+        .flatMap((sub) => sub.items.map((item) => item.id))
+    );
+  }, [filteredSections]);
+
+  const handleSimulateCompletion = useCallback(() => {
+    completeAll(allCheckableItemIds);
+  }, [completeAll, allCheckableItemIds]);
 
   const [currentSectionId, setCurrentSectionId] = useState(
     () => progress.lastVisited || filteredSections[0]?.id || sections[0].id
@@ -251,6 +265,7 @@ export function OnboardingPage() {
           userName={onboardingData.name}
           sections={filteredSections}
           sectionColors={sectionBgPalette}
+          onSimulateCompletion={handleSimulateCompletion}
         />
       </motion.aside>
 

@@ -297,14 +297,14 @@ export function AdminPage() {
                     variant="flat"
                     onPress={addProductTeamMember}
                   >
-                    + Add Member
+                    + Add member
                   </Button>
                 </CardHeader>
                 <Divider />
                 <CardBody className="card-body">
                   {formData.productTeam.length === 0 ? (
                     <p className="empty-state">
-                      No team members added yet. Click "Add Member" to add product team members.
+                      No team members added yet. Click "Add member" to add product team members.
                     </p>
                   ) : (
                     <div className="member-list">
@@ -357,14 +357,14 @@ export function AdminPage() {
                     variant="flat"
                     onPress={addCustomTask}
                   >
-                    + Add Task
+                    + Add task
                   </Button>
                 </CardHeader>
                 <Divider />
                 <CardBody className="card-body">
                   {formData.customTasks.length === 0 ? (
                     <p className="empty-state">
-                      No custom tasks added yet. Click "Add Task" to add team or role-specific tasks.
+                      No custom tasks added yet. Click "Add task" to add team or role-specific tasks.
                       <br />
                       <span style={{ fontSize: '12px', marginTop: '4px', display: 'inline-block' }}>
                         If no tasks are added, this section will be hidden from the onboarding checklist.

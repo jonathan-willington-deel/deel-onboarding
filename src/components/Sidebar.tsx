@@ -16,6 +16,7 @@ interface SidebarProps {
   userName: string;
   sections: Section[];
   sectionColors: readonly string[];
+  onSimulateCompletion?: () => void;
 }
 
 function getSectionItemIds(section: Section): string[] {
@@ -32,6 +33,7 @@ export function Sidebar({
   userName,
   sections,
   sectionColors,
+  onSimulateCompletion,
 }: SidebarProps) {
   const overallPercentage = totalProgress.total > 0 
     ? Math.round((totalProgress.completed / totalProgress.total) * 100) 
@@ -98,6 +100,14 @@ export function Sidebar({
 
       <div className="sidebar-footer">
         <p>Reach out to your line manager or onboarding buddy if you need help.</p>
+        {import.meta.env.DEV && onSimulateCompletion && (
+          <button
+            className="simulate-completion-btn"
+            onClick={onSimulateCompletion}
+          >
+            ⚡ Simulate Completion
+          </button>
+        )}
       </div>
 
       <style>{`
@@ -254,6 +264,26 @@ export function Sidebar({
           font-size: 12px;
           color: var(--card-text-secondary);
           line-height: 1.4;
+        }
+
+        .simulate-completion-btn {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          padding: 6px 10px;
+          border: 1px dashed rgba(0, 0, 0, 0.2);
+          border-radius: 6px;
+          background: rgba(0, 0, 0, 0.03);
+          color: var(--card-text-secondary);
+          font-size: 11px;
+          cursor: pointer;
+          transition: background 0.15s ease, border-color 0.15s ease;
+        }
+
+        .simulate-completion-btn:hover {
+          background: rgba(0, 0, 0, 0.06);
+          border-color: rgba(0, 0, 0, 0.35);
+          color: var(--card-text-primary);
         }
       `}</style>
     </aside>

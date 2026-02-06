@@ -28,10 +28,11 @@ export const designLeads: DesignPerson[] = [
 ];
 
 export const executives = [
-  { name: 'Alex Bouaziz', role: 'CEO & co-founder' },
-  { name: 'Shuooo Wang', role: 'CRO & co-founder' },
-  { name: 'Daniel Westgarth', role: 'COO' },
-  { name: 'Yaron Lavi', role: 'CTO' },
+  { name: 'Alex Bouaziz', role: 'CEO & co-founder', photo: 'people/alex-bouaziz.png' },
+  { name: 'Shuooo Wang', role: 'CRO & co-founder', photo: 'people/shuooo-wang.png' },
+  { name: 'Joe Kauffman', role: 'President & Chief Financial Officer', photo: 'people/joe-kauffman.png' },
+  { name: 'Daniel Westgarth', role: 'COO', photo: 'people/daniel-westgarth.png' },
+  { name: 'Yaron Lavi', role: 'CTO', photo: 'people/yaron-lavi.png' },
 ];
 
 export const sections: Section[] = [
@@ -300,10 +301,11 @@ export const sections: Section[] = [
         title: 'Deel executives',
         readOnly: true,
         items: [
-          { id: 'exec-1', text: '**Alex Bouaziz** - CEO & co-founder' },
-          { id: 'exec-2', text: '**Shuooo Wang** - CRO & co-founder' },
-          { id: 'exec-3', text: '**Daniel Westgarth** - COO' },
-          { id: 'exec-4', text: '**Yaron Lavi** - CTO' },
+          { id: 'exec-1', text: '**Alex Bouaziz** - CEO & co-founder', photo: 'people/alex-bouaziz.png' },
+          { id: 'exec-2', text: '**Shuooo Wang** - CRO & co-founder', photo: 'people/shuooo-wang.png' },
+          { id: 'exec-3', text: '**Joe Kauffman** - President & Chief Financial Officer', photo: 'people/joe-kauffman.png' },
+          { id: 'exec-4', text: '**Daniel Westgarth** - COO', photo: 'people/daniel-westgarth.png' },
+          { id: 'exec-5', text: '**Yaron Lavi** - CTO', photo: 'people/yaron-lavi.png' },
         ],
       },
     ],
