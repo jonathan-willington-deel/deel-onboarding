@@ -68,7 +68,7 @@ export function CompletionScreen({ name }: CompletionScreenProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          Onboarding Complete
+          Onboarding complete
         </motion.span>
 
         <motion.h1
@@ -86,7 +86,7 @@ export function CompletionScreen({ name }: CompletionScreenProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.75, duration: 0.6 }}
         >
-          Are you ready to get stuck in?
+          You're all set to begin.
         </motion.p>
       </motion.div>
 

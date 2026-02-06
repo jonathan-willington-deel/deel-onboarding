@@ -91,7 +91,7 @@ export function WelcomeScreen({ name, onReveal, onComplete }: WelcomeScreenProps
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
             >
-              Ready to start your journey with Deel?
+              Here's everything you need to get started at Deel.
             </motion.p>
 
             <motion.button

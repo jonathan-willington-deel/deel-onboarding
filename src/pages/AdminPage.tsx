@@ -122,7 +122,7 @@ export function AdminPage() {
     <div className="admin-page">
       <header className="admin-header">
         <div className="header-content">
-          <h1>Deel Designer Onboarding</h1>
+          <h1>Deel designer onboarding</h1>
           <p>Create personalized onboarding checklists for new designers</p>
         </div>
       </header>
@@ -138,7 +138,7 @@ export function AdminPage() {
             >
               <Card className="form-card">
                 <CardHeader className="card-header">
-                  <h2>New Joiner Details</h2>
+                  <h2>New joiner details</h2>
                 </CardHeader>
                 <Divider />
                 <CardBody className="card-body">
@@ -153,7 +153,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Start Date"
+                      label="Start date"
                       labelPlacement="inside"
                       type="date"
                       value={formData.startDate}
@@ -162,7 +162,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Job Title"
+                      label="Job title"
                       labelPlacement="inside"
                       placeholder="e.g., Product Designer"
                       value={formData.jobTitle}
@@ -171,7 +171,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Product Vertical"
+                      label="Product vertical"
                       labelPlacement="inside"
                       placeholder="e.g., Payroll"
                       value={formData.productVertical}
@@ -180,7 +180,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Design Group"
+                      label="Design group"
                       labelPlacement="inside"
                       placeholder="e.g., Fintech"
                       value={formData.designGroup}
@@ -189,7 +189,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Line Manager"
+                      label="Line manager"
                       labelPlacement="inside"
                       placeholder="Manager's name"
                       value={formData.lineManager}
@@ -198,7 +198,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Input
-                      label="Onboarding Buddy"
+                      label="Onboarding buddy"
                       labelPlacement="inside"
                       placeholder="Buddy's name"
                       value={formData.onboardingBuddy}
@@ -208,7 +208,7 @@ export function AdminPage() {
                       fullWidth
                     />
                     <Textarea
-                      label="Custom Welcome Message (Optional)"
+                      label="Custom welcome message (optional)"
                       labelPlacement="inside"
                       placeholder="Add a personalized welcome message..."
                       value={formData.customMessage || ''}
@@ -230,21 +230,21 @@ export function AdminPage() {
             >
               <Card className="form-card">
                 <CardHeader className="card-header">
-                  <h2>Designers in Their Group</h2>
+                  <h2>Designers in their group</h2>
                   <Button
                     size="sm"
                     color="secondary"
                     variant="flat"
                     onPress={addTeamDesigner}
                   >
-                    + Add Designer
+                    + Add designer
                   </Button>
                 </CardHeader>
                 <Divider />
                 <CardBody className="card-body">
                   {formData.teamDesigners.length === 0 ? (
                     <p className="empty-state">
-                      No designers added yet. Click "Add Designer" to add team members.
+                      No designers added yet. Click "Add designer" to add team members.
                     </p>
                   ) : (
                     <div className="member-list">
@@ -290,7 +290,7 @@ export function AdminPage() {
             >
               <Card className="form-card">
                 <CardHeader className="card-header">
-                  <h2>Product Team Members</h2>
+                  <h2>Product team members</h2>
                   <Button
                     size="sm"
                     color="secondary"
@@ -350,7 +350,7 @@ export function AdminPage() {
             >
               <Card className="form-card">
                 <CardHeader className="card-header">
-                  <h2>Custom Tasks</h2>
+                  <h2>Custom tasks</h2>
                   <Button
                     size="sm"
                     color="secondary"
@@ -418,7 +418,7 @@ export function AdminPage() {
             >
               <Card className="preview-card">
                 <CardHeader className="card-header">
-                  <h2>Preview & Generate</h2>
+                  <h2>Preview and generate</h2>
                 </CardHeader>
                 <Divider />
                 <CardBody className="card-body">
@@ -432,7 +432,7 @@ export function AdminPage() {
 
                     <div className="preview-details">
                       <div className="detail-row">
-                        <span className="detail-label">Start Date</span>
+                        <span className="detail-label">Start date</span>
                         <span className="detail-value">{formData.startDate || 'Not set'}</span>
                       </div>
                       <div className="detail-row">
@@ -440,11 +440,11 @@ export function AdminPage() {
                         <span className="detail-value">{formData.productVertical || 'Not set'}</span>
                       </div>
                       <div className="detail-row">
-                        <span className="detail-label">Design Group</span>
+                        <span className="detail-label">Design group</span>
                         <span className="detail-value">{formData.designGroup || 'Not set'}</span>
                       </div>
                       <div className="detail-row">
-                        <span className="detail-label">Line Manager</span>
+                        <span className="detail-label">Line manager</span>
                         <span className="detail-value">{formData.lineManager || 'Not set'}</span>
                       </div>
                       <div className="detail-row">
@@ -452,15 +452,15 @@ export function AdminPage() {
                         <span className="detail-value">{formData.onboardingBuddy || 'Not set'}</span>
                       </div>
                       <div className="detail-row">
-                        <span className="detail-label">Team Designers</span>
+                        <span className="detail-label">Team designers</span>
                         <span className="detail-value">{formData.teamDesigners.length} added</span>
                       </div>
                       <div className="detail-row">
-                        <span className="detail-label">Product Team</span>
+                        <span className="detail-label">Product team</span>
                         <span className="detail-value">{formData.productTeam.length} added</span>
                       </div>
                       <div className="detail-row">
-                        <span className="detail-label">Custom Tasks</span>
+                        <span className="detail-label">Custom tasks</span>
                         <span className="detail-value">
                           {formData.customTasks.length > 0
                             ? `${formData.customTasks.length} added`
@@ -476,7 +476,7 @@ export function AdminPage() {
                         className="generate-btn"
                         onPress={generateLink}
                       >
-                        Generate Onboarding Link
+                        Generate onboarding link
                       </Button>
                       <Button
                         variant="bordered"
@@ -507,7 +507,7 @@ export function AdminPage() {
                           onPress={copyToClipboard}
                           className="copy-btn"
                         >
-                          {copied ? 'Copied' : 'Copy Link'}
+                          {copied ? 'Copied' : 'Copy link'}
                         </Button>
                       </motion.div>
                     )}
@@ -521,7 +521,7 @@ export function AdminPage() {
                   <ol>
                     <li>Fill in the new joiner's details</li>
                     <li>Add their team designers and product team members</li>
-                    <li>Click "Generate Onboarding Link"</li>
+                    <li>Click "Generate onboarding link"</li>
                     <li>Share the link with the new joiner</li>
                   </ol>
                   <p className="note">

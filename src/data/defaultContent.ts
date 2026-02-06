@@ -37,7 +37,7 @@ export const executives = [
 export const sections: Section[] = [
   {
     id: 'line-manager-actions',
-    title: 'Line Manager Actions',
+    title: 'Line manager actions',
     icon: '',
     description: 'Tasks your line manager will complete to help you get started.',
     subsections: [
@@ -45,9 +45,9 @@ export const sections: Section[] = [
         title: 'Your first 1:1',
         items: [
           { id: 'lm-1', text: 'Set up a 1:1 welcome call' },
-          { id: 'lm-2', text: 'Inform you about the structure of the design org', link: 'https://www.figma.com/design/yiK7sVZQvINCfZImScl1Dn/Design-Org-%26-teams?node-id=4307-2261', linkText: 'design org' },
-          { id: 'lm-3', text: 'Inform you about your product team' },
-          { id: 'lm-4', text: 'Inform you about expectations for your first week' },
+          { id: 'lm-2', text: 'Walk you through the design org structure', link: 'https://www.figma.com/design/yiK7sVZQvINCfZImScl1Dn/Design-Org-%26-teams?node-id=4307-2261', linkText: 'design org' },
+          { id: 'lm-3', text: 'Walk you through your product team' },
+          { id: 'lm-4', text: 'Share expectations for your first week' },
         ],
       },
       {
@@ -55,14 +55,14 @@ export const sections: Section[] = [
         items: [
           { id: 'lm-5', text: 'Invite you to any recurring meetings for your product team' },
           { id: 'lm-6', text: 'Invite you to any group-level design meetings' },
-          { id: 'lm-7', text: 'Invite you to the Thursday design show & tell (and to prepare a short introduction!)' },
+          { id: 'lm-7', text: 'Invite you to the Thursday design show & tell -- you will also prepare a brief self-introduction' },
         ],
       },
       {
         title: 'Slack',
         items: [
-          { id: 'lm-8', text: 'Invite and announce you in the #product-department & #designers channels' },
-          { id: 'lm-9', text: 'Invite and announce you in the relevant team + vertical channels' },
+          { id: 'lm-8', text: 'Introduce and add you to the #product-department & #designers channels' },
+          { id: 'lm-9', text: 'Introduce and add you to the relevant team and vertical channels' },
           { id: 'lm-10', text: 'Invite you to all designer Slack channels (see list below)' },
         ],
       },
@@ -70,32 +70,32 @@ export const sections: Section[] = [
   },
   {
     id: 'first-actions',
-    title: 'Your 1st Actions',
+    title: 'Your first actions',
     icon: '',
     subsections: [
       {
-        title: 'Required Training',
+        title: 'Required training',
         items: [
           { id: 'nj-1', text: 'Complete all mandatory training in Deel Learning (you\'ll receive an email invite)' },
-          { id: 'nj-2', text: 'Attend the orientation call from Deel members' },
+          { id: 'nj-2', text: 'Attend the Deel orientation session' },
         ],
       },
       {
         title: 'Update your profile',
         items: [
-          { id: 'fa-1', text: 'Slack - Add photo, your role and product team name. Optionally add your phone number.' },
-          { id: 'fa-2', text: 'Gmail - Add your photo (preferably the same you\'ve used for Slack)' },
-          { id: 'fa-3', text: 'Deel - Ensure all your personal information is fully set up on your worker account' },
+          { id: 'fa-1', text: 'Slack: Add your photo, role, and product team name. Optionally, add your phone number.' },
+          { id: 'fa-2', text: 'Gmail: Add your photo (preferably the same one you used for Slack)' },
+          { id: 'fa-3', text: 'Deel: Ensure all your personal information is fully set up on your worker account' },
         ],
       },
       {
         title: 'Your team',
         items: [
-          { id: 'fa-4', text: 'Note: We have weekly company-wide meetings on Thursday 4 PM GMT (UK time)' },
-          { id: 'fa-5', text: 'Speak to your PM, familiarise yourself with your team\'s purpose, definition of success, and KPIs' },
-          { id: 'fa-6', text: 'Review your team\'s Jira board (and bookmark)' },
-          { id: 'fa-7', text: 'Review Deel and your team\'s Looker (and bookmark)' },
-          { id: 'fa-8', text: 'Join your team\'s holiday calendar - check in with the PM on how to do this' },
+          { id: 'fa-4', text: 'Note: Company-wide meetings are held every Thursday at 4 PM GMT' },
+          { id: 'fa-5', text: 'Meet with your PM to learn about your team\'s purpose, success metrics, and KPIs' },
+          { id: 'fa-6', text: 'Review your team\'s Jira board (and bookmark it)' },
+          { id: 'fa-7', text: 'Review the Looker dashboards for Deel and your team (and bookmark them)' },
+          { id: 'fa-8', text: 'Join your team\'s holiday calendar -- ask your PM for instructions' },
         ],
       },
     ],
@@ -107,25 +107,25 @@ export const sections: Section[] = [
     description: 'Ensure you have access to all these channels.',
     subsections: [
       {
-        title: 'General Slack Channels',
+        title: 'General Slack channels',
         items: [
           { id: 'sl-1', text: '#general - Company-wide announcements', link: 'https://deel.enterprise.slack.com/archives/C0HHLE58V', linkText: 'Open' },
-          { id: 'sl-2', text: '#ask-it - If you are experiencing IT issues', link: 'https://deel.enterprise.slack.com/archives/C0786V3LPJA', linkText: 'Open' },
-          { id: 'sl-3', text: '#access-requests - If you need additional access to software', link: 'https://deel.enterprise.slack.com/archives/C027ZKC40AV', linkText: 'Open' },
-          { id: 'sl-4', text: '#ask-procurement-team - If you need WeWork access or additional equipment', link: 'https://deel.enterprise.slack.com/archives/C03TQ8VMQCB', linkText: 'Open' },
-          { id: 'sl-5', text: '#random - Exactly what you would think', link: 'https://deel.enterprise.slack.com/archives/C023HA34140', linkText: 'Open' },
-          { id: 'sl-6', text: '#deel-travel - Travel questions + stories', link: 'https://deel.enterprise.slack.com/archives/C02CV6PUE80', linkText: 'Open' },
+          { id: 'sl-2', text: '#ask-it - IT support and troubleshooting', link: 'https://deel.enterprise.slack.com/archives/C0786V3LPJA', linkText: 'Open' },
+          { id: 'sl-3', text: '#access-requests - Software access requests', link: 'https://deel.enterprise.slack.com/archives/C027ZKC40AV', linkText: 'Open' },
+          { id: 'sl-4', text: '#ask-procurement-team - WeWork access and equipment requests', link: 'https://deel.enterprise.slack.com/archives/C03TQ8VMQCB', linkText: 'Open' },
+          { id: 'sl-5', text: '#random - Off-topic and casual conversation', link: 'https://deel.enterprise.slack.com/archives/C023HA34140', linkText: 'Open' },
+          { id: 'sl-6', text: '#deel-travel - Travel questions and stories', link: 'https://deel.enterprise.slack.com/archives/C02CV6PUE80', linkText: 'Open' },
         ],
       },
       {
-        title: 'Designer Slack Channels',
+        title: 'Designer Slack channels',
         items: [
-          { id: 'sl-7', text: '#brand-product-creatives - All product + brand designers', link: 'https://deel.enterprise.slack.com/archives/C03C9G9378U', linkText: 'Open' },
-          { id: 'sl-8', text: '#deel-ui - Engineering focused topics relating to Deel-UI components', link: 'https://deel.enterprise.slack.com/archives/CV1P0CXKP', linkText: 'Open' },
-          { id: 'sl-9', text: '#design-knowledge - Design discourse discussions for designers', link: 'https://deel.enterprise.slack.com/archives/C023HA34140', linkText: 'Open' },
-          { id: 'sl-10', text: '#design-quality-assurance - Design + implementation inconsistencies', link: 'https://deel.enterprise.slack.com/archives/C049BPWU69F', linkText: 'Open' },
-          { id: 'sl-11', text: '#ds-announcements - Design System updates', link: 'https://deel.enterprise.slack.com/archives/C05HJPDKTP1', linkText: 'Open' },
-          { id: 'sl-12', text: '#design-questions - Place to ask questions - e.g. "Have you seen a Figma file for X?"', link: 'https://deel.enterprise.slack.com/archives/C0998D4K6DA', linkText: 'Open' },
+          { id: 'sl-7', text: '#brand-product-creatives - All product and brand designers', link: 'https://deel.enterprise.slack.com/archives/C03C9G9378U', linkText: 'Open' },
+          { id: 'sl-8', text: '#deel-ui - Engineering-focused discussion on Deel UI components', link: 'https://deel.enterprise.slack.com/archives/CV1P0CXKP', linkText: 'Open' },
+          { id: 'sl-9', text: '#design-knowledge - Design discussions and knowledge sharing', link: 'https://deel.enterprise.slack.com/archives/C023HA34140', linkText: 'Open' },
+          { id: 'sl-10', text: '#design-quality-assurance - Report design-to-implementation inconsistencies', link: 'https://deel.enterprise.slack.com/archives/C049BPWU69F', linkText: 'Open' },
+          { id: 'sl-11', text: '#ds-announcements - Design system updates', link: 'https://deel.enterprise.slack.com/archives/C05HJPDKTP1', linkText: 'Open' },
+          { id: 'sl-12', text: '#design-questions - Ask design-related questions (e.g., locating Figma files)', link: 'https://deel.enterprise.slack.com/archives/C0998D4K6DA', linkText: 'Open' },
           { id: 'sl-13', text: '#product-go-to-market - New releases from all product teams', link: 'https://deel.enterprise.slack.com/archives/C027ZKC40AV', linkText: 'Open' },
         ],
       },
@@ -133,22 +133,21 @@ export const sections: Section[] = [
   },
   {
     id: 'software',
-    title: 'Software We Use',
+    title: 'Software we use',
     icon: '',
     description: 'If you need additional access or any default access is missing, please ask in #access-requests.',
     subsections: [
       {
-        title: 'Core Tools',
+        title: 'Core tools',
         items: [
-          { id: 'sw-1', text: '**Figma** - Our design tool, use your Deel email', link: 'https://www.figma.com/', linkText: 'Figma', icon: 'logos/figma.svg' },
+          { id: 'sw-1', text: '**Figma** - Design tool. Sign in with your Deel email.', link: 'https://www.figma.com/', linkText: 'Figma', icon: 'logos/figma.svg' },
           { id: 'sw-2', text: '**Slack** - Register via SSO once your email is set up', icon: 'logos/slack.svg' },
-          { id: 'sw-3', text: '**Jira** - Our sprint planning and management tool', link: 'https://letsdeel.atlassian.net/', linkText: 'Jira', icon: 'logos/jira.svg' },
-          { id: 'sw-4', text: '**Deel Knowledge Base** - Our internal wiki page/knowledge center', link: 'https://wiki.deel.network/', linkText: 'Wiki', icon: 'logos/deel.svg' },
+          { id: 'sw-3', text: '**Jira** - Sprint planning and management tool', link: 'https://letsdeel.atlassian.net/', linkText: 'Jira', icon: 'logos/jira.svg' },
+          { id: 'sw-4', text: '**Deel Knowledge Base** - Internal wiki and knowledge center', link: 'https://wiki.deel.network/', linkText: 'Wiki', icon: 'logos/deel.svg' },
           { id: 'sw-5', text: '**Looker** - Data and reporting tool used across all product teams', link: 'https://deel.cloud.looker.com/login', linkText: 'Looker', icon: 'logos/looker.svg' },
-
-          { id: 'sw-7', text: '**Zoom** - Used for weekly all hands meeting', link: 'https://zoom.us/', linkText: 'Zoom', icon: 'logos/zoom.svg' },
-          { id: 'sw-8', text: '**OpenReplay** - All the events & user videos', link: 'https://app.openreplay.com/login', linkText: 'OpenReplay', icon: 'logos/openreplay.svg' },
-          { id: 'sw-9', text: '**Amplitude** - Tracking FE events', link: 'https://app.eu.amplitude.com/analytics/deel/home', linkText: 'Amplitude', icon: 'logos/amplitude.svg' },
+          { id: 'sw-7', text: '**Zoom** - Used for the weekly all-hands meeting', link: 'https://zoom.us/', linkText: 'Zoom', icon: 'logos/zoom.svg' },
+          { id: 'sw-8', text: '**OpenReplay** - Session recordings and event tracking', link: 'https://app.openreplay.com/login', linkText: 'OpenReplay', icon: 'logos/openreplay.svg' },
+          { id: 'sw-9', text: '**Amplitude** - Front-end analytics and event tracking', link: 'https://app.eu.amplitude.com/analytics/deel/home', linkText: 'Amplitude', icon: 'logos/amplitude.svg' },
         ],
       },
     ],
@@ -167,76 +166,76 @@ export const sections: Section[] = [
         ],
       },
       {
-        title: 'Key concepts to understand',
+        title: 'Key concepts',
         readOnly: true,
         items: [
-          { id: 'env-2', text: '**The Client App** - Where clients login to run their business through Deel (app.deel.com)' },
+          { id: 'env-2', text: '**The Client App** - Where clients log in to run their business through Deel (app.deel.com)' },
           { id: 'env-3', text: '**The Worker App** - Where workers log in (contractor app, direct employee app, PEO employee app, etc.)' },
-          { id: 'env-4', text: '**Admin App (Admin Dashboard)** - Where Deel agents login to assist clients, and where Dev/Design/Eng/Product debug issues', link: 'https://admin.deel.network/', linkText: 'Admin' },
+          { id: 'env-4', text: '**Admin App (Admin Dashboard)** - Where Deel agents log in to assist clients, and where development, design, engineering, and product teams debug issues', link: 'https://admin.deel.network/', linkText: 'Admin' },
           { id: 'env-5', text: '**Production** - What real clients and workers see', link: 'https://app.letsdeel.com/', linkText: 'app.letsdeel.com' },
-          { id: 'env-6', text: '**Dev** - Where new functionality is pushed (anonymised DB refreshed every 12 weeks)', link: 'https://dev.deel.wtf/', linkText: 'dev.deel.wtf' },
-          { id: 'env-7', text: '**Giger** - Local branches for QA before pushing to dev (e.g., des-3332.deel.wtf)' },
-          { id: 'env-8', text: '**Demo** - Mainly for sales demos to prospective clients', link: 'https://demo.letsdeel.com/', linkText: 'demo.letsdeel.com' },
+          { id: 'env-6', text: '**Dev** - Staging environment for new features (anonymised database, refreshed every 12 weeks)', link: 'https://dev.deel.wtf/', linkText: 'dev.deel.wtf' },
+          { id: 'env-7', text: '**Giger** - Branch-specific environments for QA before merging to dev (e.g., des-3332.deel.wtf)' },
+          { id: 'env-8', text: '**Demo** - Primarily used for sales demos to prospective clients', link: 'https://demo.letsdeel.com/', linkText: 'demo.letsdeel.com' },
         ],
       },
       {
         title: 'Product knowledge',
         items: [
-          { id: 'learn-2', text: 'Explore Deel Blog', link: 'https://www.deel.com/blog', linkText: 'Deel Blog' },
-          { id: 'learn-3', text: 'Follow Deel LinkedIn', link: 'https://www.linkedin.com/company/deel/posts/?feedView=all', linkText: 'LinkedIn' },
-          { id: 'learn-4', text: 'Review Deel Global Hiring Guide', link: 'https://www.deel.com/global-hiring-guide', linkText: 'Hiring Guide' },
-          { id: 'learn-5', text: 'Explore Deel Community', link: 'https://community.deel.com/', linkText: 'Community' },
-          { id: 'learn-6', text: 'Watch Deel Worker types video', link: 'https://www.loom.com/share/429357a1b2fe4b4280776cb831db442e?sid=ca226d1d-e6be-4cae-92f7-73a3e4fd274d', linkText: 'Worker types' },
-          { id: 'learn-7', text: 'Review Deel Help Center', link: 'https://help.letsdeel.com/hc/en-gb', linkText: 'Help Center' },
-          { id: 'learn-8', text: 'Review Global payroll knowledge hub', link: 'https://wiki.deel.network/i/40904', linkText: 'Payroll hub' },
+          { id: 'learn-2', text: 'Explore the Deel blog', link: 'https://www.deel.com/blog', linkText: 'Deel blog' },
+          { id: 'learn-3', text: 'Follow Deel on LinkedIn', link: 'https://www.linkedin.com/company/deel/posts/?feedView=all', linkText: 'LinkedIn' },
+          { id: 'learn-4', text: 'Review the Deel global hiring guide', link: 'https://www.deel.com/global-hiring-guide', linkText: 'Hiring guide' },
+          { id: 'learn-5', text: 'Explore the Deel community', link: 'https://community.deel.com/', linkText: 'Community' },
+          { id: 'learn-6', text: 'Watch the Deel worker types video', link: 'https://www.loom.com/share/429357a1b2fe4b4280776cb831db442e?sid=ca226d1d-e6be-4cae-92f7-73a3e4fd274d', linkText: 'Worker types' },
+          { id: 'learn-7', text: 'Review the Deel help center', link: 'https://help.letsdeel.com/hc/en-gb', linkText: 'Help center' },
+          { id: 'learn-8', text: 'Review the global payroll knowledge hub', link: 'https://wiki.deel.network/i/40904', linkText: 'Payroll hub' },
         ],
       },
       {
         title: 'Processes',
         items: [
-          { id: 'learn-9', text: 'Learn Go to Market (GTM) Process', link: 'https://wiki.deel.network/i/4110', linkText: 'GTM Process' },
-          { id: 'learn-10', text: 'Understand how documentation should work', link: 'https://www.figma.com/file/17arHKV6dMgCVEociNhfSo/Design-Org.-%2FTeam-News-%26-Updates?type=design&node-id=1%3A2&mode=design', linkText: 'Documentation' },
-          { id: 'learn-11', text: 'Test our internal AI Alicia', link: 'https://admin.deel.network/alicia', linkText: 'Deel IQ Alicia' },
-          { id: 'learn-12', text: 'Read our Sales collateral', link: 'https://wiki.deel.network/i/8179', linkText: 'Sales collateral' },
-          { id: 'learn-13', text: 'Review our career ladder for Product Design', link: 'https://docs.google.com/spreadsheets/d/1ffvSvXTWb38-BFeDm3Ui1sbb1yxBd2EJeGsuk1STpfY/edit?gid=890316881#gid=890316881', linkText: 'Career ladder' },
+          { id: 'learn-9', text: 'Learn the go-to-market (GTM) process', link: 'https://wiki.deel.network/i/4110', linkText: 'GTM process' },
+          { id: 'learn-10', text: 'Review the design documentation guidelines', link: 'https://www.figma.com/file/17arHKV6dMgCVEociNhfSo/Design-Org.-%2FTeam-News-%26-Updates?type=design&node-id=1%3A2&mode=design', linkText: 'Documentation' },
+          { id: 'learn-11', text: 'Test Deel IQ (Alicia), the internal AI assistant', link: 'https://admin.deel.network/alicia', linkText: 'Deel IQ' },
+          { id: 'learn-12', text: 'Review the sales collateral', link: 'https://wiki.deel.network/i/8179', linkText: 'Sales collateral' },
+          { id: 'learn-13', text: 'Review the Product Design career ladder', link: 'https://docs.google.com/spreadsheets/d/1ffvSvXTWb38-BFeDm3Ui1sbb1yxBd2EJeGsuk1STpfY/edit?gid=890316881#gid=890316881', linkText: 'Career ladder' },
         ],
       },
     ],
   },
   {
     id: 'design-system',
-    title: 'Design System',
+    title: 'Design system',
     icon: '',
     description: 'Complete these in order to get familiar with Deel UI.',
     subsections: [
       {
         title: 'Getting started',
         items: [
-          { id: 'ds-1', text: 'Read the Overview', link: 'https://ui.deel.com/latest/workflow/overview-CuFB0vei', linkText: 'Overview' },
-          { id: 'ds-2', text: 'Learn How to navigate Deel UI', link: 'https://ui.deel.com/latest/workflow/design-system/get-started/navigate-deel-ui-l1081c0A-l1081c0A', linkText: 'Navigate Deel UI' },
-          { id: 'ds-3', text: 'Understand our Conventions', link: 'https://ui.deel.com/latest/workflow/design-system/get-started/conventions-kRy2S07X', linkText: 'Conventions' },
+          { id: 'ds-1', text: 'Read the overview', link: 'https://ui.deel.com/latest/workflow/overview-CuFB0vei', linkText: 'Overview' },
+          { id: 'ds-2', text: 'Learn how to navigate Deel UI', link: 'https://ui.deel.com/latest/workflow/design-system/get-started/navigate-deel-ui-l1081c0A-l1081c0A', linkText: 'Navigate Deel UI' },
+          { id: 'ds-3', text: 'Review the Deel UI conventions', link: 'https://ui.deel.com/latest/workflow/design-system/get-started/conventions-kRy2S07X', linkText: 'Conventions' },
         ],
       },
       {
         title: 'Contributing to Deel UI',
         items: [
-          { id: 'ds-4', text: 'Learn how to Propose new components', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/propose-new-component-qrf9aErN', linkText: 'Propose new components' },
-          { id: 'ds-5', text: 'Learn how to Create components', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/create-component-DMP6EOIl-DMP6EOIl', linkText: 'Creating components' },
-          { id: 'ds-6', text: 'Understand Design advocates', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/design-advocates-MnqMf6Wi-MnqMf6Wi', linkText: 'Design advocates' },
-          { id: 'ds-7', text: 'Know how to Report bugs', link: 'https://ui.deel.com/latest/workflow/getting-help/overview-sK4HnK1R#search-426c48bd-a436-4a8b-ba97-913d5c1f2fd5', linkText: 'Reporting bugs' },
+          { id: 'ds-4', text: 'Learn how to propose new components', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/propose-new-component-qrf9aErN', linkText: 'Propose new components' },
+          { id: 'ds-5', text: 'Learn how to create components', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/create-component-DMP6EOIl-DMP6EOIl', linkText: 'Creating components' },
+          { id: 'ds-6', text: 'Learn about the design advocates program', link: 'https://ui.deel.com/latest/workflow/design-system/contribute-to-deel-ui/design-advocates-MnqMf6Wi-MnqMf6Wi', linkText: 'Design advocates' },
+          { id: 'ds-7', text: 'Learn how to report bugs', link: 'https://ui.deel.com/latest/workflow/getting-help/overview-sK4HnK1R#search-426c48bd-a436-4a8b-ba97-913d5c1f2fd5', linkText: 'Reporting bugs' },
         ],
       },
       {
         title: 'Staying in sync',
         items: [
-          { id: 'ds-8', text: 'Understand Changes and updates', link: 'https://ui.deel.com/latest/workflow/design-system/stay-in-sync/changes-and-updates-mEncSGFT', linkText: 'Changes and updates' },
-          { id: 'ds-9', text: 'Learn about the Deprecation process', link: 'https://ui.deel.com/latest/workflow/design-system/stay-in-sync/deprecate-component-FglQ5glt-FglQ5glt', linkText: 'Deprecation process' },
+          { id: 'ds-8', text: 'Review the change and update process', link: 'https://ui.deel.com/latest/workflow/design-system/stay-in-sync/changes-and-updates-mEncSGFT', linkText: 'Changes and updates' },
+          { id: 'ds-9', text: 'Learn about the deprecation process', link: 'https://ui.deel.com/latest/workflow/design-system/stay-in-sync/deprecate-component-FglQ5glt-FglQ5glt', linkText: 'Deprecation process' },
         ],
       },
       {
-        title: 'Explore our content',
+        title: 'Explore the content',
         items: [
-          { id: 'ds-10', text: 'Review Plugins & Widgets', link: 'https://ui.deel.com/latest/workflow/plugins-and-widgets/make-table-djJXUUqK', linkText: 'Plugins & Widgets' },
+          { id: 'ds-10', text: 'Review plugins and widgets', link: 'https://ui.deel.com/latest/workflow/plugins-and-widgets/make-table-djJXUUqK', linkText: 'Plugins and widgets' },
           { id: 'ds-11', text: 'Review foundations', link: 'https://ui.deel.com/latest/foundations/overview-wpadJ3lZ', linkText: 'Foundations' },
           { id: 'ds-12', text: 'Review components', link: 'https://ui.deel.com/latest/components/overview-7BkgPXFi', linkText: 'Components' },
           { id: 'ds-13', text: 'Review patterns', link: 'https://ui.deel.com/latest/patterns/overview-MZf8Z06x', linkText: 'Patterns' },
@@ -245,7 +244,7 @@ export const sections: Section[] = [
       {
         title: 'Create your first design',
         items: [
-          { id: 'ds-14', text: 'Complete the sample exercise: Create your first design at Deel!', link: 'https://ui.deel.com/1081cad38/p/474eb3-get-started/b/256d0d', linkText: 'Start exercise' },
+          { id: 'ds-14', text: 'Complete the sample exercise: create your first design at Deel', link: 'https://ui.deel.com/1081cad38/p/474eb3-get-started/b/256d0d', linkText: 'Start exercise' },
         ],
       },
     ],
@@ -263,7 +262,7 @@ export const sections: Section[] = [
         ],
       },
       {
-        title: 'Senior Directors',
+        title: 'Senior directors',
         items: [
           { id: 'dt-2', text: 'Connect with **Avi Ashkenazi** - Senior Director, Product Design', photo: 'people/avi-ashkenazi.png' },
           { id: 'dt-3', text: 'Connect with **Muhammed Salim** - Senior Director, Product Design', photo: 'people/muhammed-salim.png' },
@@ -271,7 +270,7 @@ export const sections: Section[] = [
         ],
       },
       {
-        title: 'Group Product Design Managers',
+        title: 'Group product design managers',
         items: [
           { id: 'dt-5', text: 'Connect with **Jonathan Willington** - Group Product Design Manager, Deel HR + Engage', photo: 'people/jon-willington.png' },
           { id: 'dt-6', text: 'Connect with **Jose Castillo** - Group Product Design Manager, Self-Serve Payroll', photo: 'people/jose-castillo.png' },
@@ -280,7 +279,7 @@ export const sections: Section[] = [
         ],
       },
       {
-        title: 'Lead Product Designers',
+        title: 'Lead product designers',
         items: [
           { id: 'dt-9', text: 'Connect with **Aleksandr Loviagin** - Lead Product Designer, Platform', photo: 'people/alex-loviagin.png' },
           { id: 'dt-10', text: 'Connect with **Andra Cimpan** - Lead Product Designer, Payroll Lifecycle', photo: 'people/andra-cimpan.png' },
@@ -292,13 +291,13 @@ export const sections: Section[] = [
         ],
       },
       {
-        title: 'Design Systems',
+        title: 'Design systems',
         items: [
           { id: 'dt-16', text: 'Connect with **Pantelis Petmezas** - Senior Product Designer, Design Systems' },
         ],
       },
       {
-        title: 'Deel Executives',
+        title: 'Deel executives',
         readOnly: true,
         items: [
           { id: 'exec-1', text: '**Alex Bouaziz** - CEO & co-founder' },
@@ -315,53 +314,53 @@ export const sections: Section[] = [
     icon: '',
     subsections: [
       {
-        title: 'Time Off Setup',
+        title: 'Time off setup',
         items: [
-          { id: 'pto-1', text: 'Read PTO policies / flexible time off', link: 'https://wiki.deel.network/en/internal/departments/people/deel-team-perks-benefits/deel-team-member-flexible-time-off', linkText: 'PTO policies' },
-          { id: 'pto-2', text: 'Read Requesting Time Off guide', link: 'https://wiki.deel.network/en/internal/departments/people/deel-team-perks-benefits/deel-team-member-requesting-time-away', linkText: 'Requesting Time Off' },
+          { id: 'pto-1', text: 'Read the PTO and flexible time-off policies', link: 'https://wiki.deel.network/en/internal/departments/people/deel-team-perks-benefits/deel-team-member-flexible-time-off', linkText: 'PTO policies' },
+          { id: 'pto-2', text: 'Read the requesting time off guide', link: 'https://wiki.deel.network/en/internal/departments/people/deel-team-perks-benefits/deel-team-member-requesting-time-away', linkText: 'Requesting time off' },
           { id: 'pto-3', text: 'Ensure you have access to \'Time Off\' by Deel' },
-          { id: 'pto-4', text: 'Add in any planned holiday that you have coming up over the next 6 months' },
-          { id: 'pto-5', text: 'Add in any national holidays for your country of work' },
+          { id: 'pto-4', text: 'Add any planned time off for the next 6 months' },
+          { id: 'pto-5', text: 'Add national holidays for your country of work' },
         ],
       },
     ],
   },
   {
     id: 'manual-of-me',
-    title: 'Manual of Me',
+    title: 'Manual of me',
     icon: '',
-    description: 'Help your team get to know you better!',
+    description: 'Help your team get to know you.',
     subsections: [
       {
-        title: 'Create your Manual',
+        title: 'Create your manual',
         items: [
-          { id: 'mom-1', text: 'Make a copy of the Manual of Me document', link: 'https://docs.google.com/presentation/d/1ChsvYncs3MVrrFsuYgDWxx9ZRYeYdwAjDT3RtPjYso0/edit#slide=id.g2e815faf41f_0_29', linkText: 'Manual of Me template' },
-          { id: 'mom-2', text: 'Fill out with your content' },
-          { id: 'mom-3', text: 'Speak to your manager to see when the best time to present it to your team will be' },
+          { id: 'mom-1', text: 'Make a copy of the Manual of me document', link: 'https://docs.google.com/presentation/d/1ChsvYncs3MVrrFsuYgDWxx9ZRYeYdwAjDT3RtPjYso0/edit#slide=id.g2e815faf41f_0_29', linkText: 'Manual of me template' },
+          { id: 'mom-2', text: 'Complete it with your details' },
+          { id: 'mom-3', text: 'Ask your manager when to present it to your team' },
         ],
       },
     ],
   },
   {
     id: 'feedback',
-    title: 'Provide Feedback!',
+    title: 'Provide feedback',
     icon: '',
-    description: 'Let us know what you found effective and what could be improved with your onboarding process!',
+    description: 'Share what went well and what could be improved about the onboarding process.',
     subsections: [
       {
         title: 'Share your feedback',
         items: [
-          { id: 'fb-1', text: 'For Design System onboarding feedback: reach out to Pantelis Petmezas' },
-          { id: 'fb-2', text: 'For learning modules in Deel Engage: reach out to Jonathan Willington & Kunal Drego' },
-          { id: 'fb-3', text: 'For the overall onboarding experience through Deel product: reach out to Laura Foletto & Aleksandr Loviagin' },
-          { id: 'fb-4', text: 'For this checklist: Speak to your line manager' },
+          { id: 'fb-1', text: 'For design system onboarding feedback: contact Pantelis Petmezas' },
+          { id: 'fb-2', text: 'For learning modules in Deel Engage: contact Jonathan Willington & Kunal Drego' },
+          { id: 'fb-3', text: 'For the overall onboarding experience: contact Laura Foletto & Aleksandr Loviagin' },
+          { id: 'fb-4', text: 'For this checklist: contact your line manager' },
         ],
       },
     ],
   },
   {
     id: 'other-actions',
-    title: 'Other Actions',
+    title: 'Other actions',
     icon: '',
     description: 'Any additional tasks specific to your role or team.',
     subsections: [
